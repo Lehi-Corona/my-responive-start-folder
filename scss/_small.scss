@@ -18,12 +18,14 @@ body {
   height: 100%;
   font-family: $defaultFontFamily;
   font-weight: $mediumWeight;
-  color: $fontColor;
+  color: $darkText;
+  background-color: $lightBg;
+  margin: 0;
 }
 
 #headerWrapper {
-    background-color: $secondaryColor;
-    color: $primaryColor;
+    background-color: $headerBg;
+    border-bottom: 1px solid $borderColor;
 }
   
 header {
@@ -34,12 +36,13 @@ header {
   h1 {
     margin: 0;
     font-size: 1.2rem;
-    font-weight: $mediumWeight;
+    font-weight: $boldWeight;
+    color: $primaryColor;
   }
 }
 
 #navWrapper {
-    background-color: $primaryColor;
+    background-color: $navBg;
 }
 
 nav {
@@ -53,15 +56,21 @@ nav {
       flex: 1;
     }
   }
-  li.active {background-color: blanchedalmond;}
+  li.active a {
+    background-color: $primaryColor;
+    color: $white;
+    font-weight: $boldWeight;
+  }
   a {
     display: block;
     padding: 0.75rem;
-    color: white;
+    color: $darkText;
     text-align: center;
     text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
     &:hover {
-      color: cadetblue;
+      color: $primaryColor;
+      background-color:rgba(77, 200, 233, 0.15);
     }
   }
 }
@@ -69,13 +78,15 @@ nav {
 //begin the footer 
 
 #footerWrapper {
-    background-color: $secondaryColor;
-    color: $primaryColor;
+    background-color: $footerBg;
+    border-top: 1px solid $borderColor;
 }
 footer {
-  padding: .5rem $gutter;
+  padding: .75rem $gutter;
   p{
     margin: 0;
     font-weight: $lightWeight;
+    color: $mutedText;
+    text-align: center;
   }
 }

@@ -1,6 +1,15 @@
-$primaryColor: #4dc8e9;
-$secondaryColor: #ff6f61;
-$fontColor: #333;
+
+$primaryColor: #4dc8e9; // logo / accents
+
+$darkText: #1f2933;
+$mutedText: #6b7280;
+$lightBg: #f8fafc;
+$white: #ffffff;
+
+$navBg: #e6f7fc;       // very light tint of brand
+$headerBg: $white;
+$footerBg: #f1f5f9;
+$borderColor: #e5e7eb;
 
 $defaultFontFamily: "Roboto Condensed", sans-serif;
 $lightWeight: 300;

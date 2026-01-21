@@ -329,12 +329,14 @@ body {
   height: 100%;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 500;
-  color: #333;
+  color: #1f2933;
+  background-color: #f8fafc;
+  margin: 0;
 }
 
 #headerWrapper {
-  background-color: #ff6f61;
-  color: #4dc8e9;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 header {
@@ -346,11 +348,12 @@ header {
 header h1 {
   margin: 0;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 700;
+  color: #4dc8e9;
 }
 
 #navWrapper {
-  background-color: #4dc8e9;
+  background-color: #e6f7fc;
 }
 
 nav ul {
@@ -363,31 +366,37 @@ nav ul {
 nav ul li {
   flex: 1;
 }
-nav li.active {
-  background-color: blanchedalmond;
+nav li.active a {
+  background-color: #4dc8e9;
+  color: #ffffff;
+  font-weight: 700;
 }
 nav a {
   display: block;
   padding: 0.75rem;
-  color: white;
+  color: #1f2933;
   text-align: center;
   text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 nav a:hover {
-  color: cadetblue;
+  color: #4dc8e9;
+  background-color: rgba(77, 200, 233, 0.15);
 }
 
 #footerWrapper {
-  background-color: #ff6f61;
-  color: #4dc8e9;
+  background-color: #f1f5f9;
+  border-top: 1px solid #e5e7eb;
 }
 
 footer {
-  padding: 0.5rem 16px;
+  padding: 0.75rem 16px;
 }
 footer p {
   margin: 0;
   font-weight: 300;
+  color: #6b7280;
+  text-align: center;
 }
 
 @media only screen and (min-width: 35rem) {
